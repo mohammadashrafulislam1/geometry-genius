@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/00996a7f45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Geometry Genius Header -->
+    <header class="header">
+      <div>
+        <h2 class="header-title">Interactive</h2>
+      <p class="header-description">Geometry Genius</p>
+      </div>
+      <div><a href="blog.html"><button class="btn-primary">Blog</button></a></div>
+    </header>
+   
+    <!-- Main Section -->
+
+    <main>
+        <section class="main-section">
+            <div class="grid-section">
+                <div class="card" id="card">
+                    <img src="images/triangle.png" alt="">
+                    <h2 class="card-title" id="first-card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="show"><p>b= <span id="base-element">0</span> cm</p> <p>h= <span id="height-element">0</span> cm</p><i class="fa-regular fa-pen-to-square" id="edit-btn"></i></div>
+                    <div class="hide" id="hide-area">
+                        b <input type="number" name="" id="base-field"> cm ;
+                    h <input type="number" id="height-field"> cm <i class="fa-solid fa-square-check" id="done-btn"></i>
+                    </div><br>
+                    <button class="btn-primary" id="triangle-btn">Calculate</button>
+                </div>
+    
+                <div class="card">
+                    <img src="images/rectangle.png" alt="">
+                    <h2 id="second-card-title">Rectangle</h2>
+                    <p>Area (A) = w x l</p>
+                    w <input type="number" name="" id="width-field"> cm ;
+                    l <input type="number" id="length-field"> cm <br><br>
+                    <button class="btn-primary" id="rectangle-btn">Calculate</button>
+                </div>
+    
+                <div class="card">
+                    <img src="images/parallelogram.png" alt="">
+                    <h2 id="third-card-title">Parallelogram</h2>
+                    <p>Area (A) = b x h</p>
+                    b <input type="number" name="" id="body-field"> cm ;
+                    h <input type="number" id="high-field"> cm <br><br>
+                    <button class="btn-primary" id="parallelogram-btn">Calculate</button>
+                </div>
+    
+                <div class="card">
+                    <img src="images/rhombus.png" alt="">
+                    <h2 id="fourth-card-title">Rhombus</h2>
+                    <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                    d<sub>1</sub> <input type="number" name="" id="d1-field"> cm ;
+                    d<sub>2</sub> <input type="number" id="d2-field"> cm <br><br>
+                    <button class="btn-primary" id="rhombus-btn">Calculate</button>
+                </div>
+    
+                <div class="card">
+                    <img src="images/pentagon.png" alt="">
+                    <h2 id="fifth-card-title">Pentagon</h2>
+                    <p>Area (A) = 0.5 x p x b</p>
+                    p <input type="number" name="" id="perimeter-field"> cm ;
+                    b <input type="number" id="bottom-field"> cm <br><br>
+                    <button class="btn-primary" id="pentagon-btn">Calculate</button>
+                </div>
+    
+                <div class="card">
+                    <img src="images/ellipse.png" alt="">
+                    <h2 id="last-card-title">Ellipse</h2>
+                    <p>Area (A) = πab</p>
+                    a <input type="number" name="" id="area-field"> cm ;
+                    b <input type="number" id="b-field"> cm <br><br>
+                    <button class="btn-primary" id="ellipse-btn">Calculate</button>
+                </div>
+            </div>
+
+            <div class="calculation-section">
+                <h2 class="area-calculate">Area Calculation</h2>
+                <table>
+                    <tbody id="table-container">
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/geometry.js"></script>
+    <script src="js/show-hide.js"></script>
+    <script src="js/js-style.js"></script>
+</body>
+</html>
